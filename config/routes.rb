@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get "/name_params" => "names#name_params"
 end
