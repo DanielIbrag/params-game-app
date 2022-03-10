@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   get "/name_params" => "names#name_params"
+  get "url_segment_params/:variable" => "names#url_segment_params"
 end
