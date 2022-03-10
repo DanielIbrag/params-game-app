@@ -10,7 +10,7 @@ class NamesController < ApplicationController
   end
 
   def url_segment_params
-    input_number = params["variable"].to_i
+    input_number = params["number"].to_i
     if input_number > 36
       render json: { message: "too high" }
     elsif input_number < 36
