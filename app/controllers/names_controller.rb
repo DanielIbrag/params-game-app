@@ -19,4 +19,14 @@ class NamesController < ApplicationController
       render json: { message: "you got it!" }
     end
   end
+
+  def post_params
+    username = params["username"]
+    password = params["password"]
+    if username == "hugh" && password == "swordfish"
+      render json: { message: "Valid Credentials" }
+    else
+      render json: { message: "invalid Credentials" }
+    end
+  end
 end

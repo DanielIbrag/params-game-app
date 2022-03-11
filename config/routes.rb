@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/name_params" => "names#name_params"
   get "url_segment_params/*variable/:number" => "names#url_segment_params"
+  post "/post_params" => "names#post_params"
 end
